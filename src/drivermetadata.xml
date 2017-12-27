@@ -1,0 +1,7 @@
+<Driver Description="Autoload driver for TeraVM chassis" MainClass="driver.TeraVMChassisDriver"
+        Name="TeraVMChassisDriver" Version="1.0.0">
+    <Layout>
+        <Command Name="get_inventory" DisplayName="Autoload" Tags="" Description="Import device into the CloudShell">
+        </Command>
+    </Layout>
+</Driver>
