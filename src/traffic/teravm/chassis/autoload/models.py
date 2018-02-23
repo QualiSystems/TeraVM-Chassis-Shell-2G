@@ -52,7 +52,7 @@ class Port(AbstractResource):
 
     @property
     def logical_name(self):
-        return self.get('{}Logical Name'.format(self.namespace), None)
+        return self.attributes.get('{}Logical Name'.format(self.namespace), None)
 
     @logical_name.setter
     def logical_name(self, value):
