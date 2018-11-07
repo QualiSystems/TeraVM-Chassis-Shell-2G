@@ -21,21 +21,21 @@ class TrafficGeneratorChassisResource(object):
         else:
             self.namespace_prefix = ""
 
-    # @property
-    # def user(self):
-    #     """TeraVM Controller API user
-    #
-    #     :rtype: str
-    #     """
-    #     return self.attributes.get("{}User".format(self.namespace_prefix), None)
-    #
-    # @property
-    # def password(self):
-    #     """TeraVM Controller API password
-    #
-    #     :rtype: str
-    #     """
-    #     return self.attributes.get("{}Password".format(self.namespace_prefix), None)
+    @property
+    def user(self):
+        """TeraVM Controller API user
+
+        :rtype: str
+        """
+        return self.attributes.get("{}User".format(self.namespace_prefix), None)
+
+    @property
+    def password(self):
+        """TeraVM Controller API password
+
+        :rtype: str
+        """
+        return self.attributes.get("{}Password".format(self.namespace_prefix), None)
 
     @property
     def port(self):

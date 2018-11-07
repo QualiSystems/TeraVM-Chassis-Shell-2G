@@ -23,10 +23,16 @@ node_types:
             description:
             type: integer
             default: 443
+          User:
+            description:
+            type: string
+          Password:
+            description:
+            type: password
     artifacts:
       icon:
         file: shell-icon.png
         type: tosca.artifacts.File
       driver:
-        file: TeravmChassisShell2GDriver.zip
+        file: TeraVMChassisShell2GDriver.zip
         type: tosca.artifacts.File
